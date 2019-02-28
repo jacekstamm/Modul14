@@ -4,16 +4,23 @@ import java.util.ArrayList;
 
 public class BigMac {
     private final String bun;
+    private final int burgers;
     private final String sauce;
     private final ArrayList<String> ingredients;
 
     public static class BigMacBuilder {
         private String bun;
+        private int burgers;
         private String sauce;
         private ArrayList<String> ingredients = new ArrayList<>();
 
         public BigMacBuilder bun(String bun) {
             this.bun = bun;
+            return this;
+        }
+
+        public BigMacBuilder burgers(int burgers) {
+            this.burgers = burgers;
             return this;
         }
 
@@ -29,12 +36,13 @@ public class BigMac {
         }
 
         public BigMac create() {
-            return new BigMac(bun, sauce, ingredients);
+            return new BigMac(bun, burgers, sauce, ingredients);
         }
     }
 
-    private BigMac(String bun, String sauce, ArrayList<String> ingredients) {
+    private BigMac(final String bun,final int burgers, final String sauce, final ArrayList<String> ingredients) {
         this.bun = bun;
+        this.burgers = burgers;
         this.sauce = sauce;
         this.ingredients = new ArrayList<>(ingredients);
     }
@@ -47,6 +55,7 @@ public class BigMac {
     public String toString() {
         return "BigMac{" +
                 "bun='" + bun + '\'' +
+                ", burgers=" + burgers +
                 ", sauce='" + sauce + '\'' +
                 ", ingredients=" + ingredients +
                 '}';
