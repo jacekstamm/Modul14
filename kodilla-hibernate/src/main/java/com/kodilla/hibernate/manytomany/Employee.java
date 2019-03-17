@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table (name = "EMPLOYEE")
+@Table (name = "EMPLOYEES")
 public class Employee {
     private int id;
     private String firstname;
@@ -24,7 +24,7 @@ public class Employee {
     @Id
     @GeneratedValue
     @NotNull
-    @Column (name = "EMLOYEE_ID", unique = true)
+    @Column (name = "EMPLOYEE_ID", unique = true)
     public int getId() {
         return id;
     }
