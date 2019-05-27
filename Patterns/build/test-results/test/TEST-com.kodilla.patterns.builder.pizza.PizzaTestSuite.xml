@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.builder.pizza.PizzaTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-10T23:09:56" hostname="MacBook-Pro-Jacek.local" time="0.002">
+  <properties/>
+  <testcase name="testPizzaNew" classname="com.kodilla.patterns.builder.pizza.PizzaTestSuite" time="0.002"/>
+  <system-out><![CDATA[Pizza{bottom='Thin', sauce='Spicy', ingredients=[Onion, Ham, Mushrooms]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

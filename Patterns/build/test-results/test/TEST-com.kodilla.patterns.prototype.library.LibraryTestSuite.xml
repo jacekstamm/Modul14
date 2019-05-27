@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-10T23:09:56" hostname="MacBook-Pro-Jacek.local" time="0.01">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.01"/>
+  <system-out><![CDATA[Library [Św. Czesława]
+     Book{title='W Pustyni i Puszczy', author='Henryk Sienkiewicz', publicationDate=1911-12-24}
+     Book{title='Akademia Pana Kleksa', author='Jan Brzechwa', publicationDate=1980-07-12}
+
+Library [Poplińskich]
+     Book{title='W Pustyni i Puszczy', author='Henryk Sienkiewicz', publicationDate=1911-12-24}
+     Book{title='Akademia Pana Kleksa', author='Jan Brzechwa', publicationDate=1980-07-12}
+
+Library [Wierzbięcice]
+     Book{title='Akademia Pana Kleksa', author='Jan Brzechwa', publicationDate=1980-07-12}
+     Book{title='W Pustyni i Puszczy', author='Henryk Sienkiewicz', publicationDate=1911-12-24}
+     Book{title='Hobbit, czyli tam i z powrotem', author='J.R.R. Tolkien', publicationDate=1937-02-26}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
