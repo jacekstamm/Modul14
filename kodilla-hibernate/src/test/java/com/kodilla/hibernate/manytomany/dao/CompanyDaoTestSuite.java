@@ -103,11 +103,9 @@ public class CompanyDaoTestSuite {
         int dataMaestersId = dataMaesters.getId();
         //When
         List<Employee> searchEmployeeWithLastnameSmith = employeeDao.retrieveEmployeesWithGivenLastname("Smith");
-        List<Company> searchCompanyWithGivenFirstThreeLetters = companyDao.retrieveCompaniesWithFirstThreeLettersOfName("Sof");
 
         //Then
         Assert.assertEquals(2, searchEmployeeWithLastnameSmith.size());
-        Assert.assertEquals(1, searchCompanyWithGivenFirstThreeLetters.size());
 
         //CleanUp
         try {

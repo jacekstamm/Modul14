@@ -5,11 +5,9 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedNativeQuery(
-        name = "Company.retrieveCompaniesWithFirstThreeLettersOfName",
-        query = "SELECT * FROM COMPANIES" +
-                " WHERE COMPANY_NAME like concat(:SHORTNAME, '%')",
-        resultClass = Company.class
+@NamedQuery(
+        name = "Company.retrieveCompaniesFromAnyPartName",
+        query = "FROM Company WHERE name like concat('%', :ARG, '%')"
 )
 
 @Entity
@@ -55,5 +53,10 @@ public class Company {
 
     private void setEmployees(List<Employee> employees) {
         this.employees = employees;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
