@@ -74,6 +74,5 @@ public class FacadeManyToManyTest {
         employeeDao.delete(adamG);
         employeeDao.delete(dominikaA);
         employeeDao.delete(monikaC);
-
     }
 }
