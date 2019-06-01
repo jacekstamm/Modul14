@@ -16,6 +16,7 @@ public class PizzaOrderTestSuite {
         pizza = new OnionPizzaDecorator(pizza);
         //When
         BigDecimal pizzaCost = pizza.getCost();
+        System.out.println("Order 1 \n" + "Pizza cost: " + pizzaCost + "\n");
         //Then
         assertEquals(new BigDecimal(23), pizzaCost);
     }
@@ -31,7 +32,7 @@ public class PizzaOrderTestSuite {
         pizza = new MushroomsPizzaDecorator(pizza);
         //When
         String pizzaDescription = pizza.getDescription();
-        System.out.println(pizzaDescription);
+        System.out.println("Order 2 \n" + pizzaDescription);
         //Then
         assertEquals("Dough | Tomato Sauce | Cheese\n" +
                 "Ham\n" +
